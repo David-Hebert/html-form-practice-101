@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+input {
+    padding: 10px;
+}
+
+body {
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.button-space {
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    padding: 5px;
+}
+
+.nav-button {
+    color: white;
+    font-family: Noto Sans;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.button-space:hover {
+    transition-duration: .5s;
+    background-color: #71BEFF;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.box-input {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    resize: none;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.input {
+    margin: auto;
+}
+
+form {
+    display: block;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.question {
+    margin: 20px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.checkboxes label{
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.checkboxes input {
+    vertical-align: middle;
+}
+
+.button {
+    width: 50px;
+    height: 30px;
+    margin: 15px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+@media (max-width: 576px) {
+    nav {
+        background-color: #71BEFF;
+    }
+
+    .button-space {
+        border: solid #71BEFF;
+    }
+
+    .button-space:hover {
+        border: solid white;
+        
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .icon {
+        width: 15%;
+        height: 15%;
+    }
+
+    .empty {
+        background-color: #71BEFF;
+    }
+}

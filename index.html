@@ -3,89 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Page</title>
 </head>
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+  <header>
+    <nav>
+        <div class="button-space">
+            <a class="nav-icon" href="resume.html"> <img class="icon" src="./resume.png"></a>
+            <a class="nav-button" href="resume.html">Resume</a>
+        </div>
+        <div class="button-space">
+            <a class="nav-button" href="#">About Me</a>
+        </div>
+        <div class="button-space">
+            <a class="nav-icon" target="_blank" href="https://medium.com/@king.david.abear/being-forced-to-quit-the-only-job-i-ever-enjoyed-dcaa8840a52b"><img class="icon" src="./blog.png"> </a>
+            <a class="nav-button" target="_blank" href="https://medium.com/@king.david.abear/being-forced-to-quit-the-only-job-i-ever-enjoyed-dcaa8840a52b">My Blog</a>
+        </div>
+        <div class="button-space">
+            <a class="nav-icon" href="#"> <img class="icon" src="./contact.png"> </a>
+            <a class="nav-button" href="#">Contact Me</a>
+        </div>
+        <div class="empty"></div>
+    </nav>
+</header>
+<main class="info-container">
+  <h2>Please get in touch with me and I will respond quickly.</h2>
+      <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div class="input">
+        <label for="name"></label>
+        <input class="box-input" type="text" name="name" id="name" placeholder="Full Name" >
+    </div>
+    <div>
+      <label for="email"></label>
+      <input class="box-input" type="email" name="email" id="email" placeholder="E-mail Address">
+    </div>
+    <div>
+      <label for="age"></label>
+      <input class="box-input" type="number" name="age" id="age" placeholder="Age" min="1" max="200" step="5">
+    </div>
+    <div class="checkboxes">
+      <p class="question"><b>How did you hear about me?</b></p>
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+        <input type="checkbox" name="classmate" id="classmate">
+        <label for="classmate">Classmate</label>
       </div>
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
+        <input type="checkbox" name="resume" id="resume">
+        <label for="resume">Resume Submission</label>
+      </div>
+      <div>
+        <input type="checkbox" name="linkedin" id="linkedin">
+        <label for="linkedin">LinkedIn</label>
+      </div>
+      <div>
+        <input type="checkbox" name="recommendation" id="recommendation">
+        <label for="recommendation">Coding Academy Rec</label>
       </div>
     </div>
     <div>
-      Gender
+      Do you want to be contacted by me?
       <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+        <input type="radio" name="contact" id="yes" value="yes">
+        <label for="yes">Yes</label>
       </div>
       <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        <input type="radio" name="contact" id="no" value="no">
+        <label for="no">No</label>
       </div>
       <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <label class="birthday" for="date">If yes, please enter your birthday!</label><br>
+        <input class="box-input" type="date" name="date" id="date" min="2019-06-10">
       </div>
     </div>
     <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
+      <label for="bio"></label>
+      <textarea class="box-input" id="bio" name="bio" placeholder="comments"></textarea>
     </div>
     <input type="hidden" name="hidden" value="hi">
     <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
+    <button class="button" type="reset">Reset</button>
+    <button class="button" type="submit">Submit</button>
   </form>
+  </main>
   <!-- <script src="scripts.js"></script> -->
 </body>
 </html>
